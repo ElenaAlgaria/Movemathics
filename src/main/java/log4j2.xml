@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration>
+  <Properties>
+    <Property name="LOG_DIR">log</Property>
+    <Property name="APP_NAME">movemathics</Property>
+  </Properties>
+  <Appenders>
+    <Console name="console" target="SYSTEM_OUT">
+      <PatternLayout pattern="%d{HH:mm:ss} %-5p %L [%c] - &lt;%m&gt;%n" />
+    </Console>
+
+    <RollingFile name="rollingFile" fileName="${LOG_DIR}/${APP_NAME}.log" filePattern="${LOG_DIR}/${APP_NAME}.%d{dd-MMM}.log.gz" ignoreExceptions="false">
+      <PatternLayout>
+        <Pattern>%d{ISO8601} %-5p [%t] (%F:%L) - %m%n</Pattern>
+    </PatternLayout>
+    <Policies>              
+        <TimeBasedTriggeringPolicy interval="1" modulate="true"/>
+        <SizeBasedTriggeringPolicy size="100 KB" />
+    </Policies>
+      <DefaultRolloverStrategy max="5" />
+    </RollingFile>
+  </Appenders>
+
+  <Loggers>
+    <Logger name="ch.fhnw.ip12.MoveMathics.java" additivity="true"></Logger>
+    <Logger name="ch.fhnw.ip12.gui.gameobject.Exercise.java" additivity="true"></Logger>
+    <Logger name="ch.fhnw.ip12.gui.reader.ExerciseReader.java" additivity="true"></Logger>
+    <Logger name="ch.fhnw.ip12.mqtt.ScoreSender.java" additivity="true"></Logger>
+    <Logger name="ch.fhnw.ip12.handdetection.PictureRecognition.java" additivity="true"></Logger>
+    <Logger name="ch.fhnw.ip12.gui.controller.components.GameFlowController.java" additivity="true"></Logger>
+
+    <Root level="warn">
+      <AppenderRef ref="console" />
+    </Root>
+
+  </Loggers>
+
+</Configuration>

@@ -1,0 +1,526 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="1155.907930857311" y="3154.0">ch.fhnw.ip12.gui.controller.ScorelistController</node>
+    <node x="102.65889198799505" y="1103.0">ch.fhnw.ip12.handdetection.Sender</node>
+    <node x="2272.129742040191" y="1373.0">ch.fhnw.ip12.gui.gameobject.Exercise</node>
+    <node x="917.9079308573108" y="3154.0">ch.fhnw.ip12.gui.controller.CalibrationController</node>
+    <node x="1434.907930857311" y="3088.0">ch.fhnw.ip12.gui.controller.MenuController</node>
+    <node x="1338.725" y="0.0">ch.fhnw.ip12.constants.ScreenNames</node>
+    <node x="1419.4740388693158" y="2291.0">ch.fhnw.ip12.gui.gameobject.FxGameButton</node>
+    <node x="835.8727400991711" y="2115.0">ch.fhnw.ip12.gui.manager.HandsManager</node>
+    <node x="641.2412641906442" y="3088.0">ch.fhnw.ip12.gui.controller.StartScreenController</node>
+    <node x="10.5" y="618.0">ch.fhnw.ip12.gui.input.InputReceiver</node>
+    <node x="2226.624038869316" y="1674.0">ch.fhnw.ip12.gui.reader.ExerciseReader</node>
+    <node x="1289.9208333333331" y="1762.5">ch.fhnw.ip12.gui.input.HandControllable</node>
+    <node x="2043.907930857311" y="3044.0">ch.fhnw.ip12.gui.controller.GameController</node>
+    <node x="1652.071261091538" y="2280.0">ch.fhnw.ip12.gui.manager.ScenesManager</node>
+    <node x="108.36570553598222" y="110.0">ch.fhnw.ip12.gui.model.Position</node>
+    <node x="1875.9112179487179" y="431.0">ch.fhnw.ip12.gui.gameobject.GameObject</node>
+    <node x="2147.629742040191" y="1070.0">ch.fhnw.ip12.gui.gameobject.Stone</node>
+    <node x="359.65889198799516" y="1318.0">ch.fhnw.ip12.handdetection.PictureRecognition</node>
+    <node x="1764.907930857311" y="3088.0">ch.fhnw.ip12.gui.controller.ScoreboardController</node>
+    <node x="2694.8037641906444" y="0.0">ch.fhnw.ip12.mqtt.ScoreSender</node>
+    <node x="2205.379742040191" y="2258.0">ch.fhnw.ip12.gui.manager.ExerciseManager</node>
+    <node x="1078.2916666666665" y="1307.0">ch.fhnw.ip12.gui.gameobject.Hand</node>
+    <node x="481.90889198799516" y="1718.0">ch.fhnw.ip12.MoveMathics</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="ch.fhnw.ip12.gui.controller.MenuController" target="ch.fhnw.ip12.gui.gameobject.Hand">
+      <point x="108.5" y="-181.5" />
+      <point x="1698.407930857311" y="2994.0" />
+      <point x="1960.0532956547268" y="2994.0" />
+      <point x="1960.0532956547268" y="1644.0" />
+      <point x="1223.4583333333333" y="1644.0" />
+      <point x="44.66666666666663" y="148.5" />
+    </edge>
+    <edge source="ch.fhnw.ip12.gui.gameobject.GameObject" target="ch.fhnw.ip12.constants.ScreenNames">
+      <point x="0.0" y="-269.5" />
+      <point x="2006.4112179487179" y="411.0" />
+      <point x="1449.225" y="411.0" />
+      <point x="8.5" y="170.5" />
+    </edge>
+    <edge source="ch.fhnw.ip12.gui.controller.MenuController" target="ch.fhnw.ip12.gui.manager.HandsManager">
+      <point x="-139.5" y="-181.5" />
+      <point x="1450.407930857311" y="2734.0" />
+      <point x="994.5810734325045" y="2734.0" />
+      <point x="12.208333333333371" y="214.5" />
+    </edge>
+    <edge source="ch.fhnw.ip12.gui.controller.GameController" target="ch.fhnw.ip12.gui.manager.ExerciseManager">
+      <point x="68.3076923076926" y="-225.5" />
+      <point x="2260.2156231650038" y="2994.0" />
+      <point x="2258.379742040191" y="2994.0" />
+      <point x="-53.0" y="71.5" />
+    </edge>
+    <edge source="ch.fhnw.ip12.handdetection.Sender" target="ch.fhnw.ip12.gui.input.InputReceiver">
+      <point x="0.0" y="-60.5" />
+      <point x="209.65889198799505" y="1050.0" />
+      <point x="208.25" y="1050.0" />
+      <point x="84.75" y="82.5" />
+    </edge>
+    <edge source="ch.fhnw.ip12.gui.controller.ScoreboardController" target="ch.fhnw.ip12.gui.gameobject.Hand">
+      <point x="90.65000000000009" y="-181.5" />
+      <point x="1985.057930857311" y="2994.0" />
+      <point x="2064.308998825602" y="2994.0" />
+      <point x="2064.308998825602" y="1634.0" />
+      <point x="1245.7916666666665" y="1634.0" />
+      <point x="66.99999999999989" y="148.5" />
+    </edge>
+    <edge source="ch.fhnw.ip12.gui.input.InputReceiver" target="ch.fhnw.ip12.gui.manager.HandsManager">
+      <point x="-84.75" y="82.5" />
+      <point x="38.75" y="1050.0" />
+      <point x="33.53389198799505" y="1050.0" />
+      <point x="33.53389198799505" y="2015.0" />
+      <point x="872.497740099171" y="2015.0" />
+      <point x="-109.87500000000011" y="-214.5" />
+    </edge>
+    <edge source="ch.fhnw.ip12.gui.controller.ScoreboardController" target="ch.fhnw.ip12.gui.gameobject.FxGameButton">
+      <point x="-64.75" y="-181.5" />
+      <point x="1829.657930857311" y="2694.0" />
+      <point x="1535.6740388693158" y="2694.0" />
+      <point x="33.200000000000045" y="38.5" />
+    </edge>
+    <edge source="ch.fhnw.ip12.gui.controller.ScorelistController" target="ch.fhnw.ip12.gui.gameobject.FxGameButton">
+      <point x="12.949999999999932" y="-115.5" />
+      <point x="1298.3579308573107" y="2894.0" />
+      <point x="1469.2740388693157" y="2894.0" />
+      <point x="-33.200000000000045" y="38.5" />
+    </edge>
+    <edge source="ch.fhnw.ip12.gui.controller.CalibrationController" target="ch.fhnw.ip12.gui.gameobject.FxGameButton">
+      <point x="40.875" y="-115.5" />
+      <point x="1067.782930857311" y="2874.0" />
+      <point x="1447.1407055359825" y="2874.0" />
+      <point x="-55.33333333333326" y="38.5" />
+    </edge>
+    <edge source="ch.fhnw.ip12.gui.controller.GameController" target="ch.fhnw.ip12.constants.ScreenNames">
+      <point x="136.61538461538498" y="-225.5" />
+      <point x="2328.523315472696" y="3024.0" />
+      <point x="2643.8037641906444" y="3024.0" />
+      <point x="2643.8037641906444" y="361.0" />
+      <point x="1534.225" y="361.0" />
+      <point x="93.5" y="170.5" />
+    </edge>
+    <edge source="ch.fhnw.ip12.gui.manager.HandsManager" target="ch.fhnw.ip12.gui.input.InputReceiver">
+      <point x="-61.04166666666674" y="-214.5" />
+      <point x="921.3310734325044" y="1995.0" />
+      <point x="92.15889198799505" y="1995.0" />
+      <point x="92.15889198799505" y="1050.0" />
+      <point x="151.75" y="1050.0" />
+      <point x="28.25" y="82.5" />
+    </edge>
+    <edge source="ch.fhnw.ip12.gui.controller.ScorelistController" target="ch.fhnw.ip12.gui.manager.HandsManager">
+      <point x="-64.75" y="-115.5" />
+      <point x="1220.657930857311" y="2754.0" />
+      <point x="945.7477400991711" y="2754.0" />
+      <point x="-36.625" y="214.5" />
+    </edge>
+    <edge source="ch.fhnw.ip12.handdetection.PictureRecognition" target="ch.fhnw.ip12.constants.ScreenNames">
+      <point x="79.5" y="-137.5" />
+      <point x="598.1588919879952" y="371.0" />
+      <point x="1364.225" y="371.0" />
+      <point x="-76.5" y="170.5" />
+    </edge>
+    <edge source="ch.fhnw.ip12.gui.controller.ScorelistController" target="ch.fhnw.ip12.gui.gameobject.Hand">
+      <point x="-90.65000000000009" y="-115.5" />
+      <point x="1194.7579308573108" y="2764.0" />
+      <point x="825.3727400991711" y="2764.0" />
+      <point x="825.3727400991711" y="1654.0" />
+      <point x="1134.125" y="1654.0" />
+      <point x="-44.66666666666663" y="148.5" />
+    </edge>
+    <edge source="ch.fhnw.ip12.gui.controller.CalibrationController" target="ch.fhnw.ip12.gui.manager.ScenesManager">
+      <point x="95.375" y="-115.5" />
+      <point x="1122.282930857311" y="2934.0" />
+      <point x="1688.7379277582047" y="2934.0" />
+      <point x="-73.33333333333326" y="49.5" />
+    </edge>
+    <edge source="ch.fhnw.ip12.gui.manager.HandsManager" target="ch.fhnw.ip12.gui.reader.ExerciseReader">
+      <point x="134.29166666666674" y="-214.5" />
+      <point x="1116.6644067658378" y="2085.0" />
+      <point x="2251.749038869316" y="2085.0" />
+      <point x="-75.375" y="115.5" />
+    </edge>
+    <edge source="ch.fhnw.ip12.gui.manager.HandsManager" target="ch.fhnw.ip12.gui.input.HandControllable">
+      <point x="85.45833333333337" y="-214.5" />
+      <point x="1067.8310734325046" y="2045.0" />
+      <point x="1330.2333333333331" y="2045.0" />
+      <point x="-67.1875" y="27.0" />
+    </edge>
+    <edge source="ch.fhnw.ip12.gui.controller.GameController" target="ch.fhnw.ip12.gui.manager.ScenesManager">
+      <point x="-45.53846153846143" y="-225.5" />
+      <point x="2146.3694693188495" y="2604.0" />
+      <point x="1859.8490388693158" y="2604.0" />
+      <point x="97.77777777777783" y="49.5" />
+    </edge>
+    <edge source="ch.fhnw.ip12.gui.reader.ExerciseReader" target="ch.fhnw.ip12.gui.gameobject.Stone">
+      <point x="-50.25" y="-115.5" />
+      <point x="2276.874038869316" y="1654.0" />
+      <point x="2261.629742040191" y="1654.0" />
+      <point x="0.0" y="93.5" />
+    </edge>
+    <edge source="ch.fhnw.ip12.gui.gameobject.Stone" target="ch.fhnw.ip12.gui.gameobject.GameObject">
+      <point x="-57.0" y="-93.5" />
+      <point x="2204.629742040191" y="1020.0" />
+      <point x="2045.5612179487177" y="1020.0" />
+      <point x="39.149999999999864" y="269.5" />
+    </edge>
+    <edge source="ch.fhnw.ip12.gui.controller.StartScreenController" target="ch.fhnw.ip12.gui.gameobject.FxGameButton">
+      <point x="48.0" y="-181.5" />
+      <point x="797.2412641906442" y="2854.0" />
+      <point x="1425.007372202649" y="2854.0" />
+      <point x="-77.4666666666667" y="38.5" />
+    </edge>
+    <edge source="ch.fhnw.ip12.gui.input.HandControllable" target="ch.fhnw.ip12.gui.gameobject.Hand">
+      <point x="0.0" y="-27.0" />
+      <point x="1397.4208333333331" y="1654.0" />
+      <point x="1201.125" y="1654.0" />
+      <point x="22.33333333333337" y="148.5" />
+    </edge>
+    <edge source="ch.fhnw.ip12.gui.controller.CalibrationController" target="ch.fhnw.ip12.constants.ScreenNames">
+      <point x="-95.375" y="-115.5" />
+      <point x="931.5329308573108" y="2814.0" />
+      <point x="699.1588919879952" y="2814.0" />
+      <point x="699.1588919879952" y="391.0" />
+      <point x="1398.225" y="391.0" />
+      <point x="-42.5" y="170.5" />
+    </edge>
+    <edge source="ch.fhnw.ip12.gui.reader.ExerciseReader" target="ch.fhnw.ip12.gui.gameobject.Exercise">
+      <point x="-16.75" y="-115.5" />
+      <point x="2310.374038869316" y="1654.0" />
+      <point x="2312.629742040191" y="1654.0" />
+      <point x="-81.0" y="82.5" />
+    </edge>
+    <edge source="ch.fhnw.ip12.gui.controller.StartScreenController" target="ch.fhnw.ip12.gui.gameobject.Hand">
+      <point x="-48.0" y="-181.5" />
+      <point x="701.2412641906442" y="3004.0" />
+      <point x="565.0351907581397" y="3004.0" />
+      <point x="565.0351907581397" y="2095.0" />
+      <point x="792.3727400991711" y="2095.0" />
+      <point x="792.3727400991711" y="1634.0" />
+      <point x="1089.4583333333333" y="1634.0" />
+      <point x="-89.33333333333337" y="148.5" />
+    </edge>
+    <edge source="ch.fhnw.ip12.gui.gameobject.FxGameButton" target="ch.fhnw.ip12.gui.gameobject.GameObject">
+      <point x="41.5" y="-38.5" />
+      <point x="1543.9740388693158" y="2075.0" />
+      <point x="2126.129742040191" y="2075.0" />
+      <point x="2126.129742040191" y="1040.0" />
+      <point x="1993.361217948718" y="1040.0" />
+      <point x="-13.049999999999955" y="269.5" />
+    </edge>
+    <edge source="ch.fhnw.ip12.gui.controller.ScorelistController" target="ch.fhnw.ip12.gui.manager.ScenesManager">
+      <point x="90.64999999999998" y="-115.5" />
+      <point x="1376.0579308573108" y="2944.0" />
+      <point x="1713.182372202649" y="2944.0" />
+      <point x="-48.888888888888914" y="49.5" />
+    </edge>
+    <edge source="ch.fhnw.ip12.gui.controller.MenuController" target="ch.fhnw.ip12.gui.input.HandControllable">
+      <point x="77.5" y="-181.5" />
+      <point x="1667.407930857311" y="2984.0" />
+      <point x="1938.0532956547268" y="2984.0" />
+      <point x="1938.0532956547268" y="1945.0" />
+      <point x="1437.7333333333331" y="1945.0" />
+      <point x="40.3125" y="27.0" />
+    </edge>
+    <edge source="ch.fhnw.ip12.gui.manager.HandsManager" target="ch.fhnw.ip12.gui.gameobject.Hand">
+      <point x="36.625" y="-214.5" />
+      <point x="1018.9977400991711" y="2015.0" />
+      <point x="1167.7916666666665" y="2015.0" />
+      <point x="1167.7916666666665" y="1654.0" />
+      <point x="1156.4583333333333" y="1654.0" />
+      <point x="-22.33333333333337" y="148.5" />
+    </edge>
+    <edge source="ch.fhnw.ip12.gui.manager.ScenesManager" target="ch.fhnw.ip12.constants.ScreenNames">
+      <point x="55.0" y="-49.5" />
+      <point x="1817.071261091538" y="2095.0" />
+      <point x="2536.629742040191" y="2095.0" />
+      <point x="2536.629742040191" y="391.0" />
+      <point x="1483.225" y="391.0" />
+      <point x="42.5" y="170.5" />
+    </edge>
+    <edge source="ch.fhnw.ip12.gui.controller.ScoreboardController" target="ch.fhnw.ip12.gui.manager.HandsManager">
+      <point x="-116.54999999999995" y="-181.5" />
+      <point x="1777.8579308573107" y="2714.0" />
+      <point x="1043.4144067658378" y="2714.0" />
+      <point x="61.04166666666674" y="214.5" />
+    </edge>
+    <edge source="ch.fhnw.ip12.gui.controller.MenuController" target="ch.fhnw.ip12.gui.gameobject.FxGameButton">
+      <point x="-77.5" y="-181.5" />
+      <point x="1512.407930857311" y="2914.0" />
+      <point x="1502.4740388693158" y="2914.0" />
+      <point x="0.0" y="38.5" />
+    </edge>
+    <edge source="ch.fhnw.ip12.gui.controller.CalibrationController" target="ch.fhnw.ip12.gui.manager.HandsManager">
+      <point x="-40.875" y="-115.5" />
+      <point x="986.0329308573108" y="2794.0" />
+      <point x="896.9144067658377" y="2794.0" />
+      <point x="-85.45833333333337" y="214.5" />
+    </edge>
+    <edge source="ch.fhnw.ip12.gui.controller.GameController" target="ch.fhnw.ip12.gui.reader.ExerciseReader">
+      <point x="113.84615384615404" y="-225.5" />
+      <point x="2305.754084703465" y="2994.0" />
+      <point x="2427.879742040191" y="2994.0" />
+      <point x="2427.879742040191" y="2085.0" />
+      <point x="2402.499038869316" y="2085.0" />
+      <point x="75.375" y="115.5" />
+    </edge>
+    <edge source="ch.fhnw.ip12.gui.controller.StartScreenController" target="ch.fhnw.ip12.gui.input.HandControllable">
+      <point x="-24.0" y="-181.5" />
+      <point x="725.2412641906442" y="2824.0" />
+      <point x="814.3727400991711" y="2824.0" />
+      <point x="814.3727400991711" y="2035.0" />
+      <point x="1303.3583333333331" y="2035.0" />
+      <point x="-94.0625" y="27.0" />
+    </edge>
+    <edge source="ch.fhnw.ip12.gui.manager.ScenesManager" target="ch.fhnw.ip12.MoveMathics">
+      <point x="-55.0" y="-49.5" />
+      <point x="1707.071261091538" y="1955.0" />
+      <point x="592.1588919879952" y="1955.0" />
+      <point x="36.75" y="71.5" />
+    </edge>
+    <edge source="ch.fhnw.ip12.gui.controller.MenuController" target="ch.fhnw.ip12.constants.ScreenNames">
+      <point x="139.5" y="-181.5" />
+      <point x="1729.407930857311" y="3004.0" />
+      <point x="2547.629742040191" y="3004.0" />
+      <point x="2547.629742040191" y="381.0" />
+      <point x="1500.225" y="381.0" />
+      <point x="59.5" y="170.5" />
+    </edge>
+    <edge source="ch.fhnw.ip12.gui.reader.ExerciseReader" target="ch.fhnw.ip12.constants.ScreenNames">
+      <point x="83.75" y="-115.5" />
+      <point x="2410.874038869316" y="1654.0" />
+      <point x="2525.629742040191" y="1654.0" />
+      <point x="2525.629742040191" y="401.0" />
+      <point x="1466.225" y="401.0" />
+      <point x="25.5" y="170.5" />
+    </edge>
+    <edge source="ch.fhnw.ip12.gui.controller.GameController" target="ch.fhnw.ip12.gui.manager.HandsManager">
+      <point x="-136.61538461538453" y="-225.5" />
+      <point x="2055.2925462419266" y="2644.0" />
+      <point x="1092.247740099171" y="2644.0" />
+      <point x="109.87500000000011" y="214.5" />
+    </edge>
+    <edge source="ch.fhnw.ip12.gui.controller.GameController" target="ch.fhnw.ip12.gui.gameobject.Hand">
+      <point x="2.2737367544323206E-13" y="-225.5" />
+      <point x="2191.9079308573114" y="2584.0" />
+      <point x="2098.7964087068576" y="2584.0" />
+      <point x="2098.7964087068576" y="1624.0" />
+      <point x="1268.125" y="1624.0" />
+      <point x="89.33333333333326" y="148.5" />
+    </edge>
+    <edge source="ch.fhnw.ip12.gui.controller.ScoreboardController" target="ch.fhnw.ip12.constants.ScreenNames">
+      <point x="116.54999999999995" y="-181.5" />
+      <point x="2010.9579308573107" y="3014.0" />
+      <point x="2619.774038869316" y="3014.0" />
+      <point x="2619.774038869316" y="371.0" />
+      <point x="1517.225" y="371.0" />
+      <point x="76.5" y="170.5" />
+    </edge>
+    <edge source="ch.fhnw.ip12.gui.gameobject.Exercise" target="ch.fhnw.ip12.gui.gameobject.Stone">
+      <point x="-91.125" y="-82.5" />
+      <point x="2302.504742040191" y="1287.0" />
+      <point x="2307.229742040191" y="1287.0" />
+      <point x="45.59999999999991" y="93.5" />
+    </edge>
+    <edge source="ch.fhnw.ip12.handdetection.PictureRecognition" target="ch.fhnw.ip12.handdetection.Sender">
+      <point x="-79.5" y="-137.5" />
+      <point x="439.15889198799516" y="1287.0" />
+      <point x="209.65889198799505" y="1287.0" />
+      <point x="0.0" y="60.5" />
+    </edge>
+    <edge source="ch.fhnw.ip12.MoveMathics" target="ch.fhnw.ip12.constants.ScreenNames">
+      <point x="36.75" y="-71.5" />
+      <point x="592.1588919879952" y="1654.0" />
+      <point x="688.1588919879952" y="1654.0" />
+      <point x="688.1588919879952" y="381.0" />
+      <point x="1381.225" y="381.0" />
+      <point x="-59.5" y="170.5" />
+    </edge>
+    <edge source="ch.fhnw.ip12.gui.manager.HandsManager" target="ch.fhnw.ip12.gui.gameobject.GameObject">
+      <point x="12.208333333333258" y="-214.5" />
+      <point x="994.5810734325044" y="1965.0" />
+      <point x="776.0394067658378" y="1965.0" />
+      <point x="776.0394067658378" y="1030.0" />
+      <point x="1888.9612179487178" y="1030.0" />
+      <point x="-117.45000000000005" y="269.5" />
+    </edge>
+    <edge source="ch.fhnw.ip12.gui.manager.HandsManager" target="ch.fhnw.ip12.gui.model.Position">
+      <point x="-36.625" y="-214.5" />
+      <point x="945.7477400991711" y="1985.0" />
+      <point x="327.15889198799505" y="1985.0" />
+      <point x="327.15889198799505" y="411.0" />
+      <point x="186.7657055359823" y="411.0" />
+      <point x="22.40000000000009" y="60.5" />
+    </edge>
+    <edge source="ch.fhnw.ip12.gui.controller.ScorelistController" target="ch.fhnw.ip12.gui.input.HandControllable">
+      <point x="-12.950000000000045" y="-115.5" />
+      <point x="1272.4579308573107" y="2844.0" />
+      <point x="1359.5630586546617" y="2844.0" />
+      <point x="1359.5630586546617" y="2075.0" />
+      <point x="1410.8583333333331" y="2075.0" />
+      <point x="13.4375" y="27.0" />
+    </edge>
+    <edge source="ch.fhnw.ip12.gui.manager.ExerciseManager" target="ch.fhnw.ip12.gui.reader.ExerciseReader">
+      <point x="-53.0" y="-71.5" />
+      <point x="2258.379742040191" y="2085.0" />
+      <point x="2301.999038869316" y="2085.0" />
+      <point x="-25.125" y="115.5" />
+    </edge>
+    <edge source="ch.fhnw.ip12.gui.controller.GameController" target="ch.fhnw.ip12.gui.gameobject.FxGameButton">
+      <point x="-91.07692307692287" y="-225.5" />
+      <point x="2100.831007780388" y="2624.0" />
+      <point x="1568.8740388693159" y="2624.0" />
+      <point x="66.40000000000009" y="38.5" />
+    </edge>
+    <edge source="ch.fhnw.ip12.gui.controller.ScorelistController" target="ch.fhnw.ip12.constants.ScreenNames">
+      <point x="-116.55000000000007" y="-115.5" />
+      <point x="1168.8579308573107" y="2774.0" />
+      <point x="747.7644067658379" y="2774.0" />
+      <point x="747.7644067658379" y="401.0" />
+      <point x="1415.225" y="401.0" />
+      <point x="-25.5" y="170.5" />
+    </edge>
+    <edge source="ch.fhnw.ip12.gui.input.InputReceiver" target="ch.fhnw.ip12.gui.model.Position">
+      <point x="-56.5" y="-82.5" />
+      <point x="67.0" y="411.0" />
+      <point x="141.96570553598212" y="411.0" />
+      <point x="-22.399999999999977" y="60.5" />
+    </edge>
+    <edge source="ch.fhnw.ip12.gui.controller.ScoreboardController" target="ch.fhnw.ip12.gui.manager.ScenesManager">
+      <point x="12.950000000000045" y="-181.5" />
+      <point x="1907.3579308573107" y="2664.0" />
+      <point x="1810.9601499804269" y="2664.0" />
+      <point x="48.888888888888914" y="49.5" />
+    </edge>
+    <edge source="ch.fhnw.ip12.gui.controller.StartScreenController" target="ch.fhnw.ip12.gui.manager.ScenesManager">
+      <point x="96.0" y="-181.5" />
+      <point x="845.2412641906442" y="2924.0" />
+      <point x="1664.2934833137601" y="2924.0" />
+      <point x="-97.77777777777783" y="49.5" />
+    </edge>
+    <edge source="ch.fhnw.ip12.gui.controller.StartScreenController" target="ch.fhnw.ip12.gui.manager.HandsManager">
+      <point x="0.0" y="-181.5" />
+      <point x="749.2412641906442" y="2834.0" />
+      <point x="848.0810734325044" y="2834.0" />
+      <point x="-134.29166666666669" y="214.5" />
+    </edge>
+    <edge source="ch.fhnw.ip12.gui.manager.HandsManager" target="ch.fhnw.ip12.constants.ScreenNames">
+      <point x="-12.208333333333371" y="-214.5" />
+      <point x="970.1644067658377" y="1975.0" />
+      <point x="758.7644067658379" y="1975.0" />
+      <point x="758.7644067658379" y="411.0" />
+      <point x="1432.225" y="411.0" />
+      <point x="-8.5" y="170.5" />
+    </edge>
+    <edge source="ch.fhnw.ip12.gui.controller.StartScreenController" target="ch.fhnw.ip12.constants.ScreenNames">
+      <point x="-96.0" y="-181.5" />
+      <point x="653.2412641906442" y="3024.0" />
+      <point x="349.15889198799516" y="3024.0" />
+      <point x="349.15889198799516" y="361.0" />
+      <point x="1347.225" y="361.0" />
+      <point x="-93.5" y="170.5" />
+    </edge>
+    <edge source="ch.fhnw.ip12.gui.controller.MenuController" target="ch.fhnw.ip12.gui.manager.ScenesManager">
+      <point x="15.5" y="-181.5" />
+      <point x="1605.407930857311" y="2964.0" />
+      <point x="1762.071261091538" y="2964.0" />
+      <point x="0.0" y="49.5" />
+    </edge>
+    <edge source="ch.fhnw.ip12.MoveMathics" target="ch.fhnw.ip12.handdetection.PictureRecognition">
+      <point x="-36.75" y="-71.5" />
+      <point x="0.0" y="137.5" />
+    </edge>
+    <edge source="ch.fhnw.ip12.gui.controller.CalibrationController" target="ch.fhnw.ip12.gui.gameobject.Hand">
+      <point x="-68.125" y="-115.5" />
+      <point x="958.7829308573108" y="2804.0" />
+      <point x="803.3727400991711" y="2804.0" />
+      <point x="803.3727400991711" y="1644.0" />
+      <point x="1111.7916666666665" y="1644.0" />
+      <point x="-67.0" y="148.5" />
+    </edge>
+    <edge source="ch.fhnw.ip12.gui.gameobject.Hand" target="ch.fhnw.ip12.gui.model.Position">
+      <point x="-67.0" y="-148.5" />
+      <point x="1111.7916666666665" y="1277.0" />
+      <point x="338.15889198799516" y="1277.0" />
+      <point x="338.15889198799516" y="401.0" />
+      <point x="209.16570553598217" y="401.0" />
+      <point x="44.799999999999955" y="60.5" />
+    </edge>
+    <edge source="ch.fhnw.ip12.gui.controller.StartScreenController" target="ch.fhnw.ip12.MoveMathics">
+      <point x="-72.0" y="-181.5" />
+      <point x="677.2412641906442" y="3014.0" />
+      <point x="518.6588919879952" y="3014.0" />
+      <point x="-36.75" y="71.5" />
+    </edge>
+    <edge source="ch.fhnw.ip12.gui.controller.GameController" target="ch.fhnw.ip12.gui.gameobject.Stone">
+      <point x="45.53846153846166" y="-225.5" />
+      <point x="2237.446392395773" y="2564.0" />
+      <point x="2183.692242040191" y="2564.0" />
+      <point x="2183.692242040191" y="1287.0" />
+      <point x="2170.4297420401913" y="1287.0" />
+      <point x="-91.20000000000005" y="93.5" />
+    </edge>
+    <edge source="ch.fhnw.ip12.gui.controller.CalibrationController" target="ch.fhnw.ip12.gui.input.HandControllable">
+      <point x="13.625" y="-115.5" />
+      <point x="1040.532930857311" y="2844.0" />
+      <point x="1139.372740099171" y="2844.0" />
+      <point x="1139.372740099171" y="2065.0" />
+      <point x="1383.9833333333331" y="2065.0" />
+      <point x="-13.4375" y="27.0" />
+    </edge>
+    <edge source="ch.fhnw.ip12.gui.gameobject.Hand" target="ch.fhnw.ip12.gui.gameobject.GameObject">
+      <point x="0.0" y="-148.5" />
+      <point x="1178.7916666666665" y="1287.0" />
+      <point x="1206.7916666666665" y="1287.0" />
+      <point x="1206.7916666666665" y="1040.0" />
+      <point x="1915.061217948718" y="1040.0" />
+      <point x="-91.34999999999991" y="269.5" />
+    </edge>
+    <edge source="ch.fhnw.ip12.gui.controller.GameController" target="ch.fhnw.ip12.gui.input.HandControllable">
+      <point x="-22.76923076923049" y="-225.5" />
+      <point x="2169.1387000880804" y="2594.0" />
+      <point x="2053.308998825602" y="2594.0" />
+      <point x="2053.308998825602" y="1925.0" />
+      <point x="1491.4833333333331" y="1925.0" />
+      <point x="94.0625" y="27.0" />
+    </edge>
+    <edge source="ch.fhnw.ip12.gui.gameobject.Exercise" target="ch.fhnw.ip12.gui.gameobject.GameObject">
+      <point x="91.125" y="-82.5" />
+      <point x="2484.754742040191" y="1287.0" />
+      <point x="2466.2159432700464" y="1287.0" />
+      <point x="2466.2159432700464" y="990.0" />
+      <point x="2123.861217948718" y="990.0" />
+      <point x="117.45000000000005" y="269.5" />
+    </edge>
+    <edge source="ch.fhnw.ip12.gui.controller.GameController" target="ch.fhnw.ip12.gui.gameobject.GameObject">
+      <point x="22.769230769230944" y="-225.5" />
+      <point x="2214.677161626542" y="2574.0" />
+      <point x="2137.129742040191" y="2574.0" />
+      <point x="2137.129742040191" y="1030.0" />
+      <point x="2019.4612179487178" y="1030.0" />
+      <point x="13.049999999999955" y="269.5" />
+    </edge>
+    <edge source="ch.fhnw.ip12.gui.controller.ScoreboardController" target="ch.fhnw.ip12.gui.input.HandControllable">
+      <point x="64.75" y="-181.5" />
+      <point x="1959.157930857311" y="2984.0" />
+      <point x="1949.0532956547268" y="2984.0" />
+      <point x="1949.0532956547268" y="1935.0" />
+      <point x="1464.6083333333331" y="1935.0" />
+      <point x="67.1875" y="27.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.7000000000000001" x="1673.0850767439063" y="4022.5" />
+  <SelectedNodes>
+    <node>ch.fhnw.ip12.gui.controller.CalibrationController</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

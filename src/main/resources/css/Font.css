@@ -1,0 +1,7 @@
+Label,
+TextField,
+CountDownLabel,
+Text,
+TableView {
+  -fx-font-family: 'Itim' !important;
+}

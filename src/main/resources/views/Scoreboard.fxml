@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane fx:id="pane" prefHeight="600.0" prefWidth="800.0" style="-fx-background-image: url(/images/backgroundImage.png)" stylesheets="@../css/Font.css" xmlns="http://javafx.com/javafx/14.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.fhnw.ip12.gui.controller.ScoreboardController">
+   <center>
+      <TableView fx:id="scoreRang" maxWidth="800.0" minWidth="10.0" prefHeight="800.0" prefWidth="335.0" stylesheets="@../css/TableView.css" BorderPane.alignment="CENTER">
+         <columns>
+            <TableColumn fx:id="spielername" editable="false" maxWidth="383.0" prefWidth="383.0" resizable="false" sortable="false" text="Spielername" />
+            <TableColumn fx:id="punkte" editable="false" maxWidth="383.0" prefWidth="383.0" resizable="false" sortable="false" text="Punkte" />
+         </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+         <BorderPane.margin>
+            <Insets top="100.0" />
+         </BorderPane.margin>
+      </TableView>
+   </center>
+   <left>
+      <VBox alignment="CENTER" spacing="50.0" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets left="50.0" right="100.0" />
+         </BorderPane.margin>
+         <children>
+            <Button fx:id="restartGameButtonFX" maxHeight="120.0" maxWidth="120.0" minHeight="120.0" minWidth="120.0" onAction="#restartGameBtn" prefHeight="120.0" prefWidth="120.0" style="-fx-background-radius: 100; -fx-background-color: #0000;">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <graphic>
+                  <ImageView fitHeight="120.0" fitWidth="120.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/restart-game.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="homeGameButtonFX" layoutX="10.0" layoutY="10.0" maxHeight="120.0" maxWidth="120.0" minHeight="120.0" minWidth="120.0" onAction="#homeGameBtn" prefHeight="120.0" prefWidth="120.0" style="-fx-background-radius: 100; -fx-background-color: #0000;">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <graphic>
+                  <ImageView fitHeight="120.0" fitWidth="120.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/home.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </VBox>
+   </left>
+   <right>
+      <VBox alignment="CENTER" prefHeight="453.0" prefWidth="211.0">
+         <children>
+            <Button fx:id="scoreBoardUpButtonFX" maxHeight="68.0" maxWidth="68.0" minHeight="68.0" minWidth="68.0" onAction="#scoreboardUpBtn" prefHeight="68.0" prefWidth="68.0" style="-fx-background-radius: 100; -fx-background-color: #0000;">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <graphic>
+                  <ImageView fitHeight="68.0" fitWidth="68.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/scoreboard-up.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <VBox.margin>
+                  <Insets bottom="50.0" left="100.0" right="50.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="scoreBoardDownButtonFX" maxHeight="68.0" maxWidth="68.0" minHeight="68.0" minWidth="68.0" onAction="#scoreboardDownBtn" prefHeight="68.0" prefWidth="68.0" style="-fx-background-radius: 100; -fx-background-color: #0000;">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <graphic>
+                  <ImageView fitHeight="68.0" fitWidth="68.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/scoreboard-down.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <VBox.margin>
+                  <Insets left="100.0" right="50.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="scoreBoardResetFX" maxHeight="68.0" maxWidth="68.0" minHeight="68.0" minWidth="68.0" onAction="#resetScoreboard" prefHeight="68.0" prefWidth="68.0" style="-fx-background-radius: 100; -fx-background-color: #0000;">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <graphic>
+                  <ImageView fitHeight="68.0" fitWidth="68.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/bin.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <VBox.margin>
+                  <Insets left="100.0" right="50.0" top="120.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+         <BorderPane.margin>
+            <Insets left="100.0" />
+         </BorderPane.margin>
+      </VBox>
+   </right>
+   <bottom>
+      <HBox fillHeight="false" BorderPane.alignment="BOTTOM_CENTER">
+         <children>
+            <ImageView fx:id="steinmauer" fitHeight="100.0" fitWidth="400.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/stonewall.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="steinmauerMirror" fitHeight="100.0" fitWidth="400.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/stonewallMirror.png" />
+               </image>
+            </ImageView>
+         </children>
+      </HBox>
+   </bottom>
+</BorderPane>
